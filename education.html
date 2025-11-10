@@ -3,53 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education | Lavesh Kumar Portfolio</title>
+  <title>Education | Lavesh Kumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Lavesh Kumar</h1>
 
-  <header>
-    <h1>Education</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="education.html">Education</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <input id="navToggle" class="nav-checkbox" type="checkbox" aria-hidden="false" />
+      <label for="navToggle" class="nav-toggle" aria-hidden="true">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </label>
+
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+    </div>
   </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Education</h2>
+          <p>My academic journey and qualifications</p>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2023 - Present</div>
+              <h3 class="timeline-title">B.Tech in Computer Engineering</h3>
+              <p class="timeline-subtitle">Your University Name</p>
+              <p>Currently pursuing Bachelor's degree with focus on software development, embedded systems, and computer architecture.</p>
+            </div>
 
-  <section id="education">
-    <h2>Academic Background</h2>
-    <div class="edu-card">
-      <h3>🎓 B.Tech in Computer Engineering</h3>
-      <p>Delhi Technological University (DTU)</p>
-      <p>2022 – 2026</p>
-      <p>Focused on programming, operating systems, and web technologies.</p>
+            <div class="timeline-item">
+              <div class="timeline-date">2021 - 2023</div>
+              <h3 class="timeline-title">Higher Secondary Education</h3>
+              <p class="timeline-subtitle">Your School Name</p>
+              <p>Completed HSC with focus on Physics, Chemistry, and Mathematics.</p>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2020 - 2021</div>
+              <h3 class="timeline-title">Secondary Education</h3>
+              <p class="timeline-subtitle">Your School Name</p>
+              <p>Completed SSC with distinction in Mathematics and Science.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="avatar">LK</div>
+          <p class="role">Computer Engineering Student</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Lavesh Kumar. All rights reserved.</p>
     </div>
-
-    <h2>Achievements</h2>
-    <div class="edu-card">
-      <ul style="list-style:none;">
-        <li>🏅 Created multiple  C projects</li>
-        <li>🎯 Created whatsapp bot for attendance</li>
-        <li>💡 Consistently improving web design skills</li>
-      </ul>
-    </div>
-
-    <h2>Technical Skills</h2>
-    <div class="edu-card">
-      <ul style="list-style:none;">
-        <li>💻 Languages: C, python, HTML, CSS</li>
-        <li>🧰 Tools: Git, Cargo, VS Code</li>
-        <li>🐧 Platforms: Linux (Hyprland, Ubuntu)</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Lavesh Kumar. All rights reserved.</p>
   </footer>
-
 </body>
 </html>

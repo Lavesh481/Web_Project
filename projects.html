@@ -3,64 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Lavesh Kumar Portfolio</title>
+  <title>Projects | Lavesh Kumar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Lavesh Kumar</h1>
 
-  <header>
-    <h1>My Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="education.html">Education</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <input id="navToggle" class="nav-checkbox" type="checkbox" aria-hidden="false" />
+      <label for="navToggle" class="nav-toggle" aria-hidden="true">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </label>
+
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html" class="btn-outline">Contact</a>
+      </nav>
+    </div>
   </header>
+  
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>My Projects</h2>
+          <p>A collection of my recent work and experiments</p>
+          
+          <div class="projects-grid">
+            <article class="project-card">
+                <a href="https://github.com/Lavesh481/HAJIRI.git" class="project-link">
+                    <img src="images/project1.jpg" alt="WhatsApp Bot Project" class="project-image">
+                    <h3 class="project-title">WhatsApp Bot</h3>
+                    <p>An automated WhatsApp bot built with Python for message automation and responses.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Automation</span>
+                    </div>
+                    <span class="btn-outline">View Details →</span>
+                </a>
+            </article>
 
-  <section id="projects">
-    <h2>Featured Projects</h2>
+            <article class="project-card">
+                <a href="projects/iot-home.html" class="project-link">
+                    <img src="images/project2.jpg" alt="IoT Home Control Project" class="project-image">
+                    <h3 class="project-title">IoT Home Control</h3>
+                    <p>Smart home automation system using Arduino and mobile app control.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Arduino</span>
+                        <span class="project-tag">IoT</span>
+                    </div>
+                    <span class="btn-outline">View Details →</span>
+                </a>
+            </article>
 
-    <!--WhatsApp Bot Project -->
-    <div class="project">
-      <img src="images/whatsapp-bot.png" alt="WhatsApp Bot Project" class="project-img">
-      <h3>🤖 WhatsApp Chat Automation Bot</h3>
-      <p>
-        A cross-platform <strong>automation bot</strong> that interacts with WhatsApp Web to send messages,
-        schedule reminders, and handle auto-replies. Designed for productivity and small business support.
-      </p>
-      <ul>
-        ✅ Automates sending and scheduling messages
-        ✅ Supports chat-based triggers for quick responses
-        ✅ Integrated with WhatsApp Web interface using Selenium
-        🟡 <strong>Built using Java</strong> for robustness and multi-threading support
-      </ul>
-      <a href="https://github.com/Lavesh481/HAJIRI.git" target="_blank">View on GitHub</a>
+            <article class="project-card">
+                <a href="projects/portfolio.html" class="project-link">
+                    <img src="images/project3.jpg" alt="Portfolio Website Project" class="project-image">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p>Personal portfolio website built with HTML, CSS, and modern design principles.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML/CSS</span>
+                        <span class="project-tag">Web Design</span>
+                    </div>
+                    <span class="btn-outline">View Details →</span>
+                </a>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="avatar">LK</div>
+          <p class="role">Developer & Builder</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Lavesh Kumar. All rights reserved.</p>
     </div>
-
-    <!-- 🐧 Linux Config Project -->
-    <div class="project">
-      <img src="images/project2.png" alt="Linux Config Project" class="project-img">
-      <h3>🐧 Linux Config (Hyprland)</h3>
-      <p>
-        A fully customized Linux desktop setup built around <strong>Hyprland</strong>.</br>
-        It features workspace animations, blur effects, and minimal design. Configured for
-        performance and productivity with custom shell scripts.
-      </p>
-      <ul>
-        🎨 Custom window animations<br/>
-        ⚙️ Optimized for performance
-        🖥️ Built with Wayland + Hyprland
-      </ul>
-      <a href="https://github.com/yourusername/linux-config" target="_blank">View on GitHub</a>
-    </div>
-
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Lavesh Kumar. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
